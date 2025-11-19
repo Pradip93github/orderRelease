@@ -62,9 +62,9 @@
                    "settings": {
                     "defaultBindingMode": "TwoWay"
                    }},
-        "i18n":{"type": "sap.ui.model.resource.ResourceModel",
-                 "preload": true,
-                 "settings": {"bundleUrl": "i18n/i18n.properties"}}
+        "i18n":{
+            "type": "sap.ui.model.resource.ResourceModel",      
+            "settings": {"bundleName":"com.rg.sd.or.i18n.i18n"}}
      }
 
     }
