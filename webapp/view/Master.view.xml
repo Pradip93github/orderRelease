@@ -1,7 +1,8 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 controllerName="com.rg.sd.or.controller.Master">
 <Page title="Sales Document Release" id="idpage">
-<Table id="idTab" alternateRowColors="true" growing="true" growingThreshold="20" >
+<Table id="idTab" alternateRowColors="true" growing="true" growingThreshold="20" 
+ class="myCustomTableBorders">
 <headerToolbar>
 <OverflowToolbar >
 <content>
@@ -29,17 +30,28 @@ controllerName="com.rg.sd.or.controller.Master">
 <Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Document"></ObjectIdentifier></Column>
 <Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Doc.Cat."></ObjectIdentifier></Column>
 <Column width="70px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="SOrg."></ObjectIdentifier></Column>
-<Column width="70px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="DChl"></ObjectIdentifier></Column>
-<Column width="65px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Dv"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Cred.Acct."></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Created On"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Created By"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Risk Cat"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Curr."></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Net Value"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="OvCS"></ObjectIdentifier></Column>
-<Column width="65px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="OS"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Ship To"></ObjectIdentifier></Column>
+<Column width="70px" hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="DChl"></ObjectIdentifier></Column>
+<Column width="65px" hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Dv"></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Cred.Acct."></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Created On"></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Created By"></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Risk Cat"></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Curr."></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Net Value"></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="OvCS"></ObjectIdentifier></Column>
+<Column width="65px" hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="OS"></ObjectIdentifier></Column>
+<Column hAlign="Center" vAlign="Middle"
+minScreenWidth="Tablet" demandPopin="true"><ObjectIdentifier title="Ship To"></ObjectIdentifier></Column>
 </columns>
  <items>
  </items>

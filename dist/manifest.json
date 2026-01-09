@@ -1,0 +1,102 @@
+{
+	"_version": "1.18.0",
+	"sap.app": {
+		"id": "com.rg.sd.or",
+		"ach": "SD-REP-OR",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"i18n": "i18n/i18n.properties",
+		"description": "{{appdescription}}",
+		"title": "{{apptitle}}",
+		"type": "application",
+		"dataSources": {
+			"orderRelease": {
+				"type": "OData",
+				"uri": "/sap/opu/odata/sap/ZSD_ORD_RELEASE_SRV/",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"deviceTypes": {
+			"desktop": true,
+			"phone": true,
+			"tablet": true
+		},
+		"fullWidth": true,
+		"supportedThemes": [
+			"sap_fiori_3_dark",
+			"sap_fiori_3"
+		],
+		"technology": "UI5"
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			},
+			"minUI5Version": "1.130"
+		},
+		"flexEnabled": false,
+		"contentDensities": {
+			"cozy": true,
+			"compact": true
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"rootView": {
+			"id": "idRootView",
+			"type": "XML",
+			"viewName": "com.rg.sd.or.view.App",
+			"async": true
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "com.rg.sd.or.view",
+				"viewType": "XML",
+				"controlId": "idAppCon",
+				"async": true
+			},
+			"routes": [
+				{
+					"name": "startPage",
+					"pattern": "",
+					"target": "Mast"
+				}
+			],
+			"targets": {
+				"Mast": {
+					"viewName": "Master",
+					"controlAggregation": "pages"
+				}
+			}
+		},
+		"models": {
+			"ordrels": {
+				"dataSource": "orderRelease",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultBindingMode": "TwoWay"
+				}
+			},
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.rg.sd.or.i18n.i18n"
+				}
+			}
+		},
+		"flexBundle": false
+	}
+}

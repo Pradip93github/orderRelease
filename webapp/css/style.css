@@ -1,0 +1,5 @@
+myCustomTableBorders .sapMListTblCell,
+.myCustomTableBorders .sapMListTblHeader th {
+    border: 1px solid #10488880; /* Use a color that fits your theme */
+}
+
