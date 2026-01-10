@@ -1,7 +1,8 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 controllerName="com.rg.sd.or.controller.Master">
 <Page title="Sales Document Release" id="idpage">
-<Table id="idTab" alternateRowColors="true" growing="true" growingThreshold="20" >
+<Table id="idTab" alternateRowColors="true" growing="true" growingThreshold="20" 
+>
 <headerToolbar>
 <OverflowToolbar >
 <content>
@@ -25,22 +26,98 @@ controllerName="com.rg.sd.or.controller.Master">
 
 <columns >
 <!-- <Column width="45px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="P.St." ></ObjectIdentifier></Column> -->
-<Column width="55px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="CCAr"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Document"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Doc.Cat."></ObjectIdentifier></Column>
-<Column width="70px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="SOrg."></ObjectIdentifier></Column>
-<Column width="70px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="DChl"></ObjectIdentifier></Column>
-<Column width="65px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Dv"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Cred.Acct."></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Created On"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Created By"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Risk Cat"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Curr."></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Net Value"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="OvCS"></ObjectIdentifier></Column>
-<Column width="65px" hAlign="Center" vAlign="Middle"><ObjectIdentifier title="OS"></ObjectIdentifier></Column>
-<Column hAlign="Center" vAlign="Middle"><ObjectIdentifier title="Ship To"></ObjectIdentifier></Column>
+<Column width="55px" hAlign="Center" vAlign="Middle">
+<header>
+        <Label text="CCAr" />
+</header>
+<!-- <ObjectIdentifier title="CCAr"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle">
+<header>
+        <Label text="Document" />
+</header>
+<!-- <ObjectIdentifier title="Document"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle">
+<header>
+        <Label text="Doc.Cat." />
+</header>
+<!-- <ObjectIdentifier title="Doc.Cat."></ObjectIdentifier> -->
+</Column>
+<Column width="70px" hAlign="Center" vAlign="Middle">
+<header>
+        <Label text="SOrg." />
+</header>
+<!-- <ObjectIdentifier title="SOrg."></ObjectIdentifier> -->
+</Column>
+<Column width="70px" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="DChl" />
+</header>
+<!-- <ObjectIdentifier title="DChl"></ObjectIdentifier> -->
+</Column>
+<Column width="65px" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="DV" />
+</header>
+<!-- <ObjectIdentifier title="Dv"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Cred.Acct." />
+</header>
+<!-- <ObjectIdentifier title="Cred.Acct."></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Created On" />
+</header>
+<!-- <ObjectIdentifier title="Created On"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Created By" />
+</header>
+<!-- <ObjectIdentifier title="Created By"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Risk Cat" />
+</header>
+<!-- <ObjectIdentifier title="Risk Cat"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Curr." />
+</header>
+<!-- <ObjectIdentifier title="Curr."></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Net Value" />
+</header>
+<!-- <ObjectIdentifier title="Net Value"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="OvCS" />
+</header>
+<!-- <ObjectIdentifier title="OvCS"></ObjectIdentifier> -->
+</Column>
+<Column width="65px" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="OS" />
+</header>
+<!-- <ObjectIdentifier title="OS"></ObjectIdentifier> -->
+</Column>
+<Column hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline">
+<header>
+        <Label text="Ship To" />
+</header>
+<!-- <ObjectIdentifier title="Ship To" ></ObjectIdentifier> -->
+</Column>
 </columns>
+
  <items>
  </items>
 </Table>

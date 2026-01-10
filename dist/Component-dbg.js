@@ -11,7 +11,7 @@ sap.ui.define(['sap/ui/core/UIComponent'],
            
            //createContent: function(){},
            destroy: function(){
-            sap.ui.core.UIComponent.prototype.destroy.apply(this, arguments);
+                      UIComponent.prototype.destroy.apply(this, arguments);
            }
         });
     });
